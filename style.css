@@ -1,0 +1,98 @@
+body {
+    /* Maximum height of what is visible */
+    height: 100vh;   
+    margin: 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+h1 {
+    margin: 0;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1F2937;
+}
+
+.header h2 {
+    color: white;
+}
+
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.website-info {
+    background-color: #1F2937;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    color:white;
+    gap: 20px;
+}
+
+.left-side, .right-side{
+    max-width: 300px;
+}
+
+.right-side {
+    background-color: gray;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    display: block;
+    background-color: #3882F6;
+    color:white;
+    min-width: 70px;
+    border-radius: 4px;
+    
+}
+
+.information {
+    flex-grow: 1;
+}
+
+.quote {
+    flex-grow: 1;
+}
+
+.divider {
+    flex-grow: 1;
+}
+
+/*
+Remove list bullet points and place next to each other
+*/
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 16px
+}
+/*
+Remove link coloring and underline
+*/
+a {
+    color: white;
+    text-decoration: none;
+}
