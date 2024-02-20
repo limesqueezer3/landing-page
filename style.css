@@ -1,3 +1,4 @@
+
 body {
     /* Maximum height of what is visible */
     height: 100vh;   
@@ -9,7 +10,9 @@ body {
     
 }
 
+
 h1 {
+    font-weight: bold;
     margin: 0;
     color: white;
 }
@@ -36,14 +39,16 @@ h1 {
 
 
 .website-info {
-    background-color: #1F2937;
+    width: 100%;
+    background: #1F2937;
     flex-grow: 1;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
     color:white;
-    gap: 20px;
+    gap: 100px;
+    padding: 40px;
 }
 
 .left-side, .right-side{
@@ -51,8 +56,8 @@ h1 {
 }
 
 .right-side {
-    background-color: gray;
-    min-height: 150px;
+    background: gray;
+    padding: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,19 +69,83 @@ button {
     color:white;
     min-width: 70px;
     border-radius: 4px;
+    margin-top: 10px;
     
 }
 
 .information {
     flex-grow: 1;
+    padding: 40px;
+}
+.information h2 {
+    text-align: center;
+}
+
+.card-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.cardText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card {
+    border: solid #3882F6; 
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
 }
 
 .quote {
+    text-align: center;
+    width: 100%;
+    padding: 40px;
+    background: #E5E7EB;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.actual-quote {
+   font-weight: lighter;
+   font-style: italic;
+   font-size: 36px;
+   width: 500px;
+   color: #1F2937;
+}
+
+.quoter {
+    align-self: center;
+    padding-left: 200px;;
+}
 .divider {
     flex-grow: 1;
+    padding: 40px;
+}
+
+.sign-up {
+    display: flex;
+    gap: 120px;
+    border-radius: 4px;
+    background-color: #3882F6;
+    padding: 20px;
+    padding-right: 80px;
+    padding-left: 80px;
+    color:white;
+}
+.sign-up button {
+    border-color: white;
+    height: fit-content;
+    align-self: center;
 }
 
 /*
